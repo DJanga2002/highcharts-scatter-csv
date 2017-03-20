@@ -52,7 +52,7 @@
 
         xAxis: {
           title: {
-            text: 'English Learners'  // EDIT to insert horizontal x-axis label
+            text: 'English Learners(2015-16)'  // EDIT to insert horizontal x-axis label
           }
         },
 
@@ -83,8 +83,8 @@
               // EDIT tooltip text labels below to match your data
               html = '<table>';
               html += '<tr><th colspan="2"><h3>District: ' + point.name + '</h3></th></tr>';
-              html += '<tr><th>Median household income:</th><td>$' + comma(point.x) + '</td></tr>';
-              html += '<tr><th>Grades above/below average:</th><td>' + point.y + '</td></tr>';
+              html += '<tr><th>English Learners(2015-16):</th><td>' + comma(point.x) + '</td></tr>';
+              html += '<tr><th> 4th Grade CAASP Math 2016 Test Scores :</th><td>' + point.y + '</td></tr>';
               html += '</table>';
 
               return html;
